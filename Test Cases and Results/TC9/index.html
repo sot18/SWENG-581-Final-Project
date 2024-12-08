@@ -1,0 +1,64 @@
+<html>
+<head>
+    <title>The Pennsylvania State University</title>
+    <script src="https://unpkg.com/react@18.0.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18.0.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="bg-black">
+    <div id="root"></div>
+    <script type="text/babel">
+        function App() {
+            return (
+                <div class="max-w-2xl mx-auto p-4">
+                    <div class="relative mb-4">
+                        <img 
+                            src="https://placehold.co/800x400/87CEEB/ffffff?text=Penn+State+Old+Main"
+                            alt="Historic Old Main building of Penn State University with its iconic bell tower against a blue sky with white clouds, surrounded by green trees"
+                            class="w-full h-64 object-cover rounded-lg"
+                        />
+                        <div class="absolute bottom-4 left-4 text-white text-xl font-semibold">
+                            See photos
+                        </div>
+                    </div>
+
+                    <h1 class="text-white text-4xl font-bold mb-4">The Pennsylvania State University</h1>
+                    
+                    <div class="grid grid-cols-4 gap-4 mb-4">
+                        <button class="bg-gray-800 text-white py-2 px-4 rounded">Website</button>
+                        <button class="bg-gray-800 text-white py-2 px-4 rounded">Directions</button>
+                        <button class="bg-gray-800 text-white py-2 px-4 rounded">Save</button>
+                        <button class="bg-gray-800 text-white py-2 px-4 rounded">Call</button>
+                    </div>
+
+                    <p class="text-gray-400 text-lg mb-6">Land-grant university in Centre County, Pennsylvania</p>
+
+                    <p class="text-white text-lg mb-6">
+                        The Pennsylvania State University is a public state-related land-grant research university with campuses and facilities throughout Pennsylvania, United States. Founded in 1855 as Farmers' High School of Pennsylvania, Penn State was named the state's first land-grant university eight years later, in 1863. <a href="#" class="text-blue-400">Wikipedia</a>
+                    </p>
+
+                    <div class="space-y-4">
+                        <p class="text-white"><span class="font-bold">Address:</span> 201 Old Main, University Park, PA 16802</p>
+                        
+                        <p class="text-white"><span class="font-bold">Acceptance rate:</span> 55.2% (2022) <a href="#" class="text-blue-400">IPEDS</a></p>
+                        
+                        <p class="text-white"><span class="font-bold">Undergraduate tuition and fees:</span> In-state tuition 19,835 USD, Out-of-state tuition 38,651 USD (2022 – 23) <a href="#" class="text-blue-400">IPEDS</a></p>
+                        
+                        <p class="text-white"><span class="font-bold">Campus:</span> Small city, 7,343 acres (2,972 ha); Total (statewide), 22,484 acres (9,099 ha)</p>
+                        
+                        <p class="text-white"><span class="font-bold">Total enrollment:</span> 88,116 (2022)</p>
+                        
+                        <p class="text-white"><span class="font-bold">Mascot:</span> <a href="#" class="text-blue-400">Nittany Lion</a></p>
+                        
+                        <p class="text-white"><span class="font-bold">Average sat score:</span> <a href="#" class="text-blue-400">1210</a> prepscholar.com</p>
+                    </div>
+                </div>
+            );
+        }
+
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+</body>
+</html>
