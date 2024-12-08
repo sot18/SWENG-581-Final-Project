@@ -1,0 +1,50 @@
+<html>
+ <head>
+  <title>
+   Penn State Shield Logo
+  </title>
+  <style>
+   body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: white;
+        }
+
+        .shield-container {
+            width: 300px;
+            height: 300px;
+        }
+
+        .shield {
+            width: 100%;
+            height: 100%;
+            background-color: #1E407C;
+            border-radius: 0 0 150px 150px;
+            position: relative;
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+        }
+
+        .lion {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60%;
+            height: 60%;
+            background-color: white;
+            mask: url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M50 20C60 20 70 30 70 40C70 50 60 60 50 60C40 60 30 50 30 40C30 30 40 20 50 20Z"/></svg>');
+            -webkit-mask: url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M50 20C60 20 70 30 70 40C70 50 60 60 50 60C40 60 30 50 30 40C30 30 40 20 50 20Z"/></svg>');
+        }
+  </style>
+ </head>
+ <body>
+  <div class="shield-container">
+   <div class="shield">
+    <img alt="A stylized white lion head facing left against a navy blue shield background. The lion has a noble, simplified design with clean lines and a distinctive profile showing one eye, ear, and mane, characteristic of the Penn State Nittany Lion logo" class="lion" height="180" src="https://replicate.delivery/xezq/O0iPqpv3hXYJJl0fHnafhs4gg65OUuZthjea0fK2JmgLYmjPB/out-0.png" width="180"/>
+   </div>
+  </div>
+ </body>
+</html>
